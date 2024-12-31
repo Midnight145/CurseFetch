@@ -3,7 +3,7 @@
 This is a repo that allows you to fetch files that are not accessible through the CurseForge API due to the mod requiring website interaction to download the file.
 This repo is designed to be used alongside CurseMaven, not a replacement, as CurseMaven is significantly more powerful flexible.
 
-Currently, there is no public instance of this repo, so you will need to host it yourself.
+There is currently a repo hosted at `https://web-k9yic6bu7fs1.up-de-fra1-k8s-1.apps.run-on-seenode.com/`. Sorry for the ugly link, seenode was the easiest (free) option.
 
 This project is licensed under the LGPL3 license.
 
@@ -13,7 +13,10 @@ Gradle:
 ```
 repositories {
     maven {
-        url "curse-fetch-url"
+        url "https://web-k9yic6bu7fs1.up-de-fra1-k8s-1.apps.run-on-seenode.com"
+        content {
+            includeGroup "curse.fetch"
+        }
     }
 }
 ```
@@ -48,3 +51,10 @@ compile("curse.fetch:2227552:Thaumcraft-1.7.10-4.2.3.5:jar")
     ```sh
     pip install -r requirements.txt
     ```
+    
+3. Run the app
+    ```sh
+    python -m uvicorn main:app --host 0.0.0.0 --port <port>
+    ```Currently, there is no public instance of this repo, so you will need to host it yourself.
+
+4. Access your instance at `localhost:<port>`
