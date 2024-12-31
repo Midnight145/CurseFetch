@@ -1,6 +1,6 @@
 # CurseFetch
 
-This is a repo that allows you to fetch files that are not accessible through the CurseForge API due to the mod requiring website interaction to download the file.
+This is a maven repo that allows you to fetch files that are not accessible through the CurseForge API due to the mod requiring website interaction to download the file.
 This repo is designed to be used alongside CurseMaven, not a replacement, as CurseMaven is significantly more powerful flexible.
 
 There is currently a repo hosted at `https://web-k9yic6bu7fs1.up-de-fra1-k8s-1.apps.run-on-seenode.com/`. Sorry for the ugly link, seenode was the easiest (free) option.
