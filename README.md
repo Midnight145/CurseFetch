@@ -1,7 +1,7 @@
 # CurseFetch
 
 This is a maven repo that allows you to fetch files that are not accessible through the CurseForge API due to the mod requiring website interaction to download the file.
-This repo is designed to be used alongside CurseMaven, not a replacement, as CurseMaven is significantly more powerful flexible.
+This repo is designed to be used alongside CurseMaven, not a replacement, as CurseMaven is significantly more flexible.
 
 There is currently a public repo hosted at `https://uncomfortable-fey-midnight145-884fba2b.koyeb.app/`.
 
@@ -13,7 +13,7 @@ Gradle:
 ```
 repositories {
     maven {
-        url "https://web-k9yic6bu7fs1.up-de-fra1-k8s-1.apps.run-on-seenode.com"
+        url "https://uncomfortable-fey-midnight145-884fba2b.koyeb.app"
         content {
             includeGroup "curse.fetch"
         }
