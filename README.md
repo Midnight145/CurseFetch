@@ -55,6 +55,6 @@ compile("curse.fetch:2227552:Thaumcraft-1.7.10-4.2.3.5:jar")
 3. Run the app
     ```sh
     python -m uvicorn main:app --host 0.0.0.0 --port <port>
-    ```Currently, there is no public instance of this repo, so you will need to host it yourself.
+    ```
 
 4. Access your instance at `localhost:<port>`
